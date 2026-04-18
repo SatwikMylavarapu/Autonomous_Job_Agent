@@ -100,5 +100,10 @@ cp .env.example .env
 ## Built With
 
 Python · Playwright · Anthropic Claude API · Streamlit · ReportLab · Shell · cron
+
+## Dashboard
 <img width="1707" height="870" alt="image" src="https://github.com/user-attachments/assets/6cf1dee5-c83b-4dcd-84ab-01e6e78facb9" />
+
+<img width="1706" height="1028" alt="image" src="https://github.com/user-attachments/assets/6854fb21-d736-44e9-9706-7306658e5008" />
+
 
