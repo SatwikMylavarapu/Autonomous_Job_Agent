@@ -6,7 +6,7 @@ An end-to-end autonomous AI pipeline that applies to data science jobs autonomou
 
 1. Scrapes LinkedIn, Google Careers, Microsoft, Amazon, Apple, and Workday portals every 30 minutes
 2. Scores each job against my resume (0–100) across title fit, skills overlap, experience, and domain
-3. Skips jobs that explicitly deny H1B sponsorship, pay below $110K midpoint, or are older than 24 hours
+3. Skips jobs that doesnt meet some of the criterias that I have, or are older than 24 hours
 4. Generates a tailored PDF resume per job using the Anthropic Claude API
 5. Fills and submits application forms autonomously via Playwright
 6. Logs every action to a persistent wiki and displays it on a Streamlit dashboard
@@ -55,8 +55,8 @@ autonomous-job-agent/
 
 ## Filters Applied Before Every Application
 
-- H1B: skips if JD contains "no sponsorship", "citizens only", "no OPT", "no CPT", "must be authorized"
-- Salary: skips if posted range midpoint < $110,000
+- current Criteria - specific to individual
+- Salary: skips if posted range midpoint < $dollars
 - Recency: skips if job posted more than 24 hours ago
 - Seniority: skips Principal, Staff, Director, VP, Head of, Junior, Intern titles
 - Deduplication: never applies to the same URL twice
@@ -79,7 +79,7 @@ Shows: applied today, total submitted, skip breakdown, status chart, filterable 
 ## Setup
 
 ```bash
-git clone https://github.com/SatwikMylavarapu/autonomous-job-agent
+git clone https://github.com/name/autonomous-job-agent
 cd autonomous-job-agent
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -100,3 +100,5 @@ cp .env.example .env
 ## Built With
 
 Python · Playwright · Anthropic Claude API · Streamlit · ReportLab · Shell · cron
+<img width="1707" height="870" alt="image" src="https://github.com/user-attachments/assets/6cf1dee5-c83b-4dcd-84ab-01e6e78facb9" />
+
